@@ -6,56 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Res Page</title>
+    <!--Res page css-->
     <link rel="stylesheet" type="text/css" href="respage.css">
+    <!--Font css-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--Bootstrap css-->
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <!--Homepage css-->
+    <link rel="stylesheet" type="text/css" href="/Users/malebomoleleki/Documents/GitHub/MyRes/HomePage/HomePage.css">
 </head>
 <body>
 
-    <!--Header -->
+    <!--Header-->
     <header>
         <div class = "header">
             <div class = "logo"><img src="logo.jpeg" alt="MyResLogo"></div>
-            <div class = "Name"><img src="myRes.jpeg" alt="MyResText"></div>
+            <div class = "Name"></div>
         </div>
     
         <div class= "tab">
             <input type="text" placeholder="Search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="image" src="search.png" id="searchImage" />
             <a class="contacts" href="">Contacts</a>
             <a class="about" href="">About Us</a>
             <a class="AddRes" href="">Add Res</a>
-        </div>
+       </div>
     </header> 
-
-
-    <!--<header style="border: 1px solid black; margin: 10px 0px 10px 0px;padding: 0px 10px 0px 10px;">
-        
-        Logo
-        <div id="logo">
-            <img src="logo.jpeg" alt="logo">
-        </div>
-
-        Res Name
-        <div id="myRes" style="border: 1px solid black; margin: 10px 0px 10px 0px;padding: 0px 10px 0px 10px;"> 
-            <p >myRes<p></p>
-        </div>
-    </header>-->
-
-
-    <!-- Navigation 
-    <nav id="navigation" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
-        <ul>
-            <li><a href="" target="_blank">Home</a></li>
-            <li><a href="" target="_blank">Contact</a></li>
-            <li><a href="" target="_blank">Search</a></li>
-        </ul>
-    </nav> -->
 
     <main id="main" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
         
-        <div id="information" style="border: 2px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
+        <div id="res-description" style="border: 2px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
             <h2>All About Student Accommodation</h2>
             <p><em>6 16th Street, Delarey, Johannesburg, 1709</em></p>
             <br><p><strong>Res discription</strong> </p>
@@ -76,7 +57,7 @@
             </ul>
         </div>
 
-        <div id="resPictures" class="row" style="border: 2px solid black;">
+        <div id="res-pictures" class="row" style="border: 2px solid black;">
             <section id="streetview" class="imgs col-lg-6">
                 <p>street view</p>
             </section>
@@ -94,8 +75,12 @@
         <div >
 
             <!--Ratings + Reviews-->
-            <div id="ratings" class="left" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
+            <div id="ratings" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
+                
+                <!--Average rating-->
                 <p>Average Ratings</p>
+
+                <!--Star Rating-->
                 <div id="Stars" class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
@@ -109,10 +94,14 @@
                     <label for="star1" title="text">1 star</label>
                   </div>   
             </div>
-            <div id="reviews"  class="left" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;"> 
+
+            <!--Review section-->
+            <div id="reviews-header"  style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;"> 
                 <h2>Reviews</h2> 
                 
             </div>
+
+            <!--Map-->
             <section id="map" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
                 <p>map</p>
     
