@@ -6,46 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Register Page</title>
     <link rel = "stylesheet" href = "loginpgcss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <span class ="logo">
-            <img src = "Logo.jpg" alt = "logo"> 
-        </span> 
-        <span class="desc">
-            <span class = "Welcome-text">Welcome to Myres</span>
-            <span class = "login-box">
-                <h1>Add Address</h1>
-                <p>
-                    <div id="searchbox">
-                    
-                        
-                    <input type="text" placeholder="Residence Name"><br/>
-                    <input type="text" placeholder="Contacts Details"><br/>
-            
-                    <input type="text" placeholder="Physical Address"><br/>
-                    <input type="text" placeholder="Description"><br/>
-            
-                    <input type="text" placeholder="Images of Residence"><br/>
-            
-             
-                  </div></p>
-                  
-            </span>
+    <div class = "login-popup">
+        <div class = "box">
+            <div class = "img-area">
+                <img src="login_image.jpg" alt="MyResLogo" class = "img" >
+            </div>
+    
+            <div class = "form">
+                <h1> Add Residence</h1>
+                <form>
+                    <div class = "form-group">
 
-        </span>
-    </header>
+                    <input type = "text" placeholder = "Residence Name" class = "form-control">
+                    <input type = "text" placeholder = "Email" class = "form-control">
+                    <input type = "text" placeholder = "Physical Address" class = "form-control">
+                    <input type = "text" placeholder = "Description" class = "form-control"> 
+                </form>
 
-    <main>
-        <span class ="web-img">
-            <img src = "login_image.jpg" alt = "Sideimage"> 
-        </span>
+                <p1>Add files</p1>
 
-    </main>
+            <div class = "container">
+                <input type = "file" class = "upload-box" placeholder="Add file">
+            </div>
+  
 
+            </div>
+
+            <div class = "regbox">
+                <button type = "text" name = "submit" class = "Register">REGISTER</button>
+                <button type = "text" name = "submit" class = "Login">Login</button>
+            </div>
+
+        </div>
+        
+    </div>
 </body>
 
-<footer>
-    <p>&copy; 2021 MYRES. All Rights</p>
-</footer>
+
 </html>
