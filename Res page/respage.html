@@ -6,71 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Res Page</title>
+    <!--Res page css-->
     <link rel="stylesheet" type="text/css" href="respage.css">
+    <!--Font css-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
+    <!--Bootstrap css-->
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <!--Homepage css-->
+    <link rel="stylesheet" type="text/css" href="/Users/malebomoleleki/Documents/GitHub/MyRes/HomePage/HomePage.css">
 </head>
 <body>
-    <header style="border: 1px solid black; margin: 10px 0px 10px 0px;padding: 0px 10px 0px 10px;">
-        <span id="logo">
-            <img src="logo.jpeg" alt="logo">
-        </span>
-        <span> 
-            <p id="myRes">myRes<p></p>
-        </span>
-    </header>
 
-    <nav style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
-        <!-- <p>navigation</p> -->
-        <ul>
-            <li><a href="" target="_blank">Home</a></li>
-            <li><a href="" target="_blank">Contact</a></li>
-            <li><a href="" target="_blank">Search</a></li>
-        </ul>
-    </nav>
+    <!--Header-->
+    <header>
+        <div class = "header">
+            <div class = "logo"><img src="logo.jpeg" alt="MyResLogo"></div>
+            <div class = "Name"></div>
+        </div>
+    
+        <div class= "tab">
+            <input type="text" placeholder="Search">
+            <input type="image" src="search.png" id="searchImage" />
+            <a class="contacts" href="">Contacts</a>
+            <a class="about" href="">About Us</a>
+            <a class="AddRes" href="">Add Res</a>
+       </div>
+    </header> 
 
-    <main id="main" style="border: 1px solid black;">
+    <main id="main" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
         
-        <aside id="resPictures" style="border: 2px solid black;">
-            <h2>Gallery</h2>
-            <section id="streetview" class="imgs">
-                <p>street view</p>
-            </section>
-            <section id="img1" class="imgs">
-                <p>image 1</p>
-            </section>
-            <section id="img2" class="imgs">
-                <p>image 2</p>
-            </section>
-            <section id="img3" class="imgs">
-                <p>image 3</p>
-    
-            </section>
-            <section id="map">
-                <p>map</p>
-    
-            </section>
-        </aside>
-
-        <div id="information" class="left" style="border: 2px solid black;">
+        <div id="res-description" style="border: 2px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
             <h2>All About Student Accommodation</h2>
             <p><em>6 16th Street, Delarey, Johannesburg, 1709</em></p>
             <br><p><strong>Res discription</strong> </p>
+            <p>Bachelor Flat - Huge Balcony, Sunny Disposition, Big Open Windows, Bath/Shower, next to Rand Steam Mall and Major Universities!<br><br>
+
+                Highlights: Tiled flooring throughout the flat, large windows in living area, bath/shower in bathroom, washing machine connector, 
+                communal pool, 24/7 security guards at boom gate. Living /Bedroom Area: 3 Door Wardrobe, Door Leading to Huge Balcony, Large Windows, 
+                Double Bed Space, Open Plan Kitchen in Living Area: Melamine Kitchen, Stove with Oven, Enough Cupboard Space, Connector and Space for 
+                Washing Machine Bathroom: Basin, Bath/Shower, Toilet. Utilities exclude: Refuse, Water, Electricity This apartment is walking distance from all surrounding 
+                campuses such as UJ, WITS, AFDA and also close to Rand Steam Shopping Centre, Campus Square and Lancet Laboratory and SABC. Ideal for 
+                student accommodation and young professionals.</p>
             <p>Amenities</p>
             <ul>
-                <li></li>
+                <li>Access Control, Electric Fence, 24Hour Manned Security</li>
+                <li>Braai</li>
+                <li>Washing line</li>
+                <li>Swimming Pool</li>
             </ul>
+        </div>
 
+        <div id="res-pictures" class="row" style="border: 2px solid black;">
+            <section id="streetview" class="imgs col-lg-6">
+                <p>street view</p>
+            </section>
+            <section id="img1" class="imgs col-lg-6">
+                <p>image 1</p>
+            </section>
+            <section id="img2" class="imgs col-lg-6">
+                <p>image 2</p>
+            </section>
+            <section id="img3" class="imgs col-lg-6">
+                <p>image 3</p>
+            </section>
         </div>
 
         <div >
-            <div id="ratings" class="left" style="border: 1px solid black;">
+
+            <!--Ratings + Reviews-->
+            <div id="ratings" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
+                
+                <!--Average rating-->
                 <p>Average Ratings</p>
+
+                <!--Star Rating-->
+                <div id="Stars" class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>   
             </div>
-            <div id="reviews"  class="left" style="border: 1px solid black;"> 
-                <h2>Reviews</h2>    
+
+            <!--Review section-->
+            <div id="reviews-header"  style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;"> 
+                <h2>Reviews</h2> 
+                
             </div>
+
+            <!--Map-->
+            <section id="map" style="border: 1px solid black; margin: 10px 0px 10px 0px; padding: 0px 10px 0px 10px;">
+                <p>map</p>
+    
+            </section>
             <!-- <aside id="map" style="border: 1px solid black;">
                 <p>map</p>
             </aside> -->
@@ -80,7 +115,7 @@
 
   
 
-    <footer id="footer" style="border: 1px solid black;  margin: 10px 0px 10px 0px;">
+    <footer id="footer">
         <p>footer</p>
 
     </footer>
@@ -88,6 +123,6 @@
 
 
 
-    <script link="respage.js"> </script>
+    <script link=""> </script>
 </body>
 </html>

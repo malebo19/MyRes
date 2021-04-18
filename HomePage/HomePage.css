@@ -1,5 +1,6 @@
+
 .header{
-    background-color: grey;
+    background-color: white;
     width: 85em;
     height: 15em;
     margin-left: 2px;
@@ -8,9 +9,11 @@
 }
 .tab{
     background-color: grey;
-    width: 85em;
+    width: 84em;
     height: 4em;
-    margin-top: 20px;
+    margin-top: 2px;
+    margin-left: 12px;
+    margin-right: -100px;
 }
 .logo{
     float: left;
@@ -29,12 +32,18 @@
 
 }
 .Name{
+    max-width: 100%;
     float: right;
     width: 60%;
     height: 40%;
     margin-top: -95px;
     margin-bottom: 2px;
-    padding-left: 50px;
+    padding-left: 250px;
+    margin-right: 5px;
+    background-color: #1c467D;
+    height: 14em;
+
+
 
 }
 .Name img{
@@ -45,6 +54,23 @@
     margin-left: -210px;
     
 }
+
+#searchImage {
+    background-color: #1c467D;
+    float: left;
+    width: 30px;
+    padding: 10px;
+    margin-top: 18px;
+    height: 12px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none; 
+    cursor: pointer;
+    margin-left: -1px;
+
+    image-rendering:auto;
+    
+}
 .tab input{
     float: left;
     margin-left: 10px;
@@ -52,23 +78,10 @@
     margin-top: 18px;
     border-radius: 0px;
     height: 30px;
-    width: 280px;
+    width: 350px;
 
 }
-.tab button{
-  float: left;
-  width: 5%;
-  padding: 10px;
-  background: #1c467D;
-  margin-top: 18px;
-  height: 34px;
-  font-size: 17px;
-  border: 1px solid black;
-  border-left: none; 
-  cursor: pointer;
 
-    
-}
 .tab a{
     text-decoration: none;
     width: 10%;
@@ -80,29 +93,45 @@
 .contacts{
     float: left ;
     margin-left: 60px;
-    background-color: #4980c9;
+    background-color: #1c467D;
     color: white;
+    border: none;
+    height: 30px;
+    margin-top: 17px;
+
    
 }
 .tab .contacts{
-    margin-top: 22px;
+    margin-top: 20px;
 }
 .about{
     float: left;
     margin-left: 80px;
-    background-color: #4980c9;
+    background-color: #1c467D;
     color: white;
+    padding: 0px;
+    border: 0px;
+    height: 30px;
+    margin-top: 18px;
+    
     
 }
 .tab .about{
-    margin-top: 22px;
+    margin-top: 20px;
 }
 .AddRes{
     float: left;
     margin-left: 100px;
-    background-color: #4980c9;
+    background-color: #1c467D;
     color: white;
+    height: 30px;
+    margin-top: 1px;
+   
+
 }
 .tab .AddRes{
-    margin-top: 22px;
+    margin-top: 20px;
+}
+.footer{
+    background-color: #1c467D;
 }
