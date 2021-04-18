@@ -53,6 +53,7 @@
     padding: 2px;
     margin-left: -210px;
     
+    
 }
 
 #searchImage {
@@ -132,7 +133,42 @@
 .tab .AddRes{
     margin-top: 20px;
 }
-.footer{
+footer{
     background-color: #1c467D;
-    
+    margin-top: -2px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.Email{
+    margin-left: 100px;
+
+}
+.Tel{
+    margin-left: 400px;
+    margin-top: -32px;
+}
+.Insta{
+    margin-left: 660px;
+    margin-top: -33px;
+
+}
+.Fax{
+    margin-left: 860px;
+    margin-top: -33px;
+
+}
+.twitter{
+    margin-left: 1100px;
+    margin-top: -36px;
+
+}
+.links{
+    margin-left: 460px;   
+}
+.links a{
+    color:black;
+}
+.copyrights{
+    margin-left:499px ;
 }
