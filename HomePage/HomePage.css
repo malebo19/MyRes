@@ -1,174 +1,287 @@
-
-.header{
-    background-color: white;
-    width: 85em;
-    height: 15em;
-    margin-left: 2px;
-    margin-right: 2px;
-   
-}
-.tab{
-    background-color: grey;
-    width: 84em;
-    height: 4em;
-    margin-top: 2px;
-    margin-left: 12px;
-    margin-right: -100px;
-}
-.logo{
-    float: left;
-    width: 60%;
-    height: 40%;
-    margin-left: 10px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-.logo img{
-    width: 17em;
-    height: 14em;
-    border-radius: 4px;
-    padding: 2px;
-    
-
-}
-.Name{
-    max-width: 100%;
-    float: right;
-    width: 60%;
-    height: 40%;
-    margin-top: -95px;
-    margin-bottom: 2px;
-    padding-left: 250px;
-    margin-right: 5px;
-    background-color: #1c467D;
-    height: 14em;
-
-
-
-}
-.Name img{
-    width: 60em;
-    height: 14em;
-    border-radius: 4px;
-    padding: 2px;
-    margin-left: -210px;
-    
-    
+* {
+    box-sizing: border-box;
 }
 
-#searchImage {
-    background-color: #1c467D;
-    float: left;
-    width: 30px;
+#body {
+    background-color: #E1DAD8;
+
+}
+
+header {
     padding: 10px;
-    margin-top: 18px;
-    height: 12px;
-    font-size: 17px;
-    border: 1px solid black;
-    border-left: none; 
-    cursor: pointer;
-    margin-left: -1px;
-
-    image-rendering:auto;
-    
-}
-.tab input{
-    float: left;
-    margin-left: 10px;
-    border: 1px solid black;
-    margin-top: 18px;
-    border-radius: 0px;
-    height: 30px;
-    width: 350px;
-
-}
-
-.tab a{
-    text-decoration: none;
-    width: 10%;
-    margin-top: 30px;
-    border : 1px solid black;
     text-align: center;
-
+    align-items: center;
+    background-color: #1c467D;
 }
-.contacts{
-    float: left ;
-    margin-left: 60px;
+
+#logoImg {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#resName {
+    font-size: 18pt;
+    color: white;
+}
+
+#searchRes {
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+#searchSymbol {
+    width: 30px;
+}
+
+.header_links {
+    border: 10px solid #1c467D;
+    background-color: #5bccf6;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    height: 50px;
+    padding-top: 3px;
+}
+
+#loginButton {
+    background-color: #7ED956;
+    border-radius: 10px;
+    border: 10px solid #1c467D;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+
+/* Container to display all reses */
+#searchResults {
+    max-width: 100%;
+    min-height: 200px;
+    margin-top: 9px;
+    justify-content: center;
+    background-color: white;
+}
+
+/* Boxes that display each res*/
+.res_container {
+    justify-content: center;
+    height: fit-content;
+    border: 10px solid  #ffffff;
+    margin: 0px;
+    background-color: #1c467D;
+    float: left;
+    padding-bottom: 3px;
+}
+
+/*Picture displayed per res*/
+.displayPic {
+    padding-top: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+/*Res title for all reses*/
+#res_title {
+  font-size: 22pt;
+  color: white;
+  text-align:center;
+}
+
+/*Res properties display*/
+.res_info {
+  background-color: #5bccf6;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+/* Button to view accomodation */
+.view_acc {
+  text-decoration: none;
+  background-color: #7ED956;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Positioning the filter box*/
+#filters {
+    min-width: 5%;
+    background-color: #7ED956;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+
+/*filter heading*/
+h3 {
+    text-align: center;
     background-color: #1c467D;
     color: white;
+    padding: 2px;
+}
+
+/*Sub headings inn the filter box*/
+h4 {
+    color: black
+}
+
+/*Styling the two buttons under location filter*/
+.locationButtons {
+    background-color: #26A4EB;
+    margin: 5px;
     border: none;
-    height: 30px;
-    margin-top: 17px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 2px 5px 4px;
+}
 
-   
+.locationButtons:hover {
+    background-color: white;
+    transition: 2s;
 }
-.tab .contacts{
-    margin-top: 20px;
+
+/* used to switch between location types in filter */
+.hide {
+    display: none;
 }
-.about{
+
+.show {
+    display: all;
+}
+
+/*min and max input boxes*/
+.price {
+    width: 120px;
+}
+
+#priceRange {
+    width: 250px;
+}
+
+/*aligning the sliding image, will remove with javascript*/
+#slideMage {
+    width: 25%;
+    height: 25%;
+    justify-content: center;
+    height: 200px;
+    margin: 10px;
+    background-color: #307297;
     float: left;
-    margin-left: 80px;
-    background-color: #1c467D;
-    color: white;
-    padding: 0px;
-    border: 0px;
-    height: 30px;
-    margin-top: 18px;
-    
-    
 }
-.tab .about{
-    margin-top: 20px;
-}
-.AddRes{
+
+
+/*arrows surrounding the the sliding image*/
+.arrow {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    size: 100px;
+    height: 100px;
     float: left;
-    margin-left: 100px;
-    background-color: #1c467D;
+    margin-top: 5%;
+}
+
+/*Container for the sliding image*/
+.ReSlideShow {
+    max-width: 100%;
+    margin-left: 25%;
+    position: relative;
+}
+
+.Res{
+    display: none;
+}
+.Res img {
+    width: 50%;
+    height: 40%;
+    
+}
+
+.before, .after{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
-    height: 30px;
-    margin-top: 1px;
-   
+    font-size: 18px;
+    transition: 0,6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.after{
+    right: 0;
+    border-radius: 3px 0 0 3px;
 
 }
-.tab .AddRes{
-    margin-top: 20px;
+.before:hover, .after:hover{
+    background-color: rgb(0,0,0,0,8);
 }
+.caption{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.number{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.bullet{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-left: 24%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .bullet:hover {
+    background-color: #717171;
+  }
+
+.fades {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
 footer{
+    float: left;
     background-color: #1c467D;
-    margin-top: -2px;
-    position:absolute;
-    bottom:0;
+    margin-top: 50px;
+    clear: both;
     width:100%;
+    padding-top: 15px;
+   
 }
-.Email{
-    margin-left: 100px;
 
+/* aligning icons and links in the footer*/
+.grouped_items {
+    text-align: center;
 }
-.Tel{
-    margin-left: 400px;
-    margin-top: -32px;
-}
-.Insta{
-    margin-left: 660px;
-    margin-top: -33px;
 
+.grouped_items a{
+    color: white;
 }
-.Fax{
-    margin-left: 860px;
-    margin-top: -33px;
 
+.social_icons {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
 }
-.twitter{
-    margin-left: 1100px;
-    margin-top: -36px;
 
-}
-.links{
-    margin-left: 460px;   
-}
-.links a{
-    color:black;
-}
-.copyrights{
-    margin-left:499px ;
-}
