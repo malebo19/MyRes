@@ -194,7 +194,7 @@
 
 
 <script type="text/javascript" src="javaScript_files\homePage.js"></script>
-<script type="text/javascript" src="JavaScript_files\index_slide.js"></script>
+<!--<script type="text/javascript" src="JavaScript_files\index_slide.js"></script>-->
 
 </body>
 </html>
