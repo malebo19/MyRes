@@ -29,19 +29,12 @@
        <form action="index.php" method="post">
         <input type="text" id="searchRes" name='resName' class="col-lg-1">
         <button type="submit" class="col-lg-1" ><img src="pictures\search2.png" id="searchSymbol"></button>
-       </form>
        <!-- Added div to all links with 12 grid system -->
        <div class="row col-lg-6">
            <a href=#contacts class="header_links col-lg-3">Contacts</a>
            <a href=#about_us class="header_links col-lg-3">About us</a>
-<<<<<<< HEAD
-           <a href="" id="Apply" class="col-lg-3">Apply</a>
-           <button id="login" class="col-lg-3">Login</button>
-
-=======
            <button id="Apply" class="col-lg-3" >Apply</button>
            <button id="login" class="col-lg-3">Login</button>
->>>>>>> 0772c8dffb516a43f71ce0f3c2ce7dbc623656b2
        </div>
     </header>
     <?php require 'php_files/login.php'; ?>
