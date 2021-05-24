@@ -1,29 +1,7 @@
-.Loginshow-btn{
-    position: relative;
-    font-size: 35px;
-    left: 1200px;
-    top: 0px;
-    height: 45px;
-    width: 30%;
-    border: none;
-    background-color: transparent;
-    font-family: 'Staatliches', cursive;
-    cursor: pointer;
-    /*-webkit-transition-property: transform;
-    transition-property:transform;*/
-}
 
-input[type = "checkbox"]{
-    display: none;
-}
 
-#show:checked ~ .logincontainer{
-    display: block;
-
-}
 
 .logincontainer{
-    display: none ;
     height: 500px;
     width: 350 px;
     padding: 60px;

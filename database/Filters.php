@@ -106,10 +106,7 @@ $photos = array('pictures\RichmondChill.jpeg', 'pictures\RichmondEnter.jpeg', 'p
 #Sample for testing resPage gallery
 $pictures = array('..\pictures\RichmondChill.jpeg', '..\pictures\RichmondEnter.jpeg', '..\pictures\RichmondOutside.jpeg', '..\pictures\RichmondRooms.jpg', '..\pictures\RichmondStudy.jpeg');
 
-#include '..\index.php';
 
-#header("Location: ..\index.php?");
-echo "string";
 
 
 ?>

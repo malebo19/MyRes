@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="..\css_files\bootstrap_css\bootstrap.min.css">
 
     <script>
         function text(x) {
@@ -29,6 +31,11 @@
     </script>
 </head>
 <body>
+    <?php 
+    
+    echo 'Hello World';
+    
+    ?>
 
     <div class = "Background-box">
         <div class = "Register-box">
@@ -38,35 +45,46 @@
     
             <div class = "form">
                 <h1 id = "mainheading"> Add Residence</h1>
-                <form id = "regForm" class = "form" action = "..\php_files\connection.php" method = "get">
+                <form id = "regForm" class = "form" action = "..\database\registration.php" method = "post">
                     <div class = "container">
 
                     
                         <h2 class = "subheading">User</h2>
-
-       
-                        <input type = "text" placeholder = "Residence Name" class = "form-control" id = "name" name = "name">
-                        <input type = "text" placeholder = "Email" class = "form-control" id = "email" name = "email">                                    
-                        <input type = "text" placeholder = "Telephone" class = "form-control" id = "telephone" name = "telephone">
-                    
-                        <label for = "description" id = "label_description">Description of Residence</label>
-                        <textarea rows = "15" cols = "20" class = "form-control" id = "description"  name = "description"></textarea>
+                        <!-- users div -->
+                        <div class="row">
+                            <!-- user details sub div ti align with bootstrap grid -->
+                            <div class="col-lg-6 col-md-12">
+                                <input type = "text" placeholder = "Residence Name" class = "form-control" id = "resname" name = "name">
+                                <input type = "text" placeholder = "Email" class = "form-control" id = "email" name = "email">                                    
+                                <input type = "text" placeholder = "Telephone" class = "form-control" id = "telephone" name = "telephone">
+                            </div>
+                            <!-- user details sub div ti align with bootstrap grid -->
+                            <div class="col-lg-6 col-md-12">
+                                <label for = "description" id = "label_description">Description of Residence</label><br>
+                                <textarea rows = "10" cols = "20" id = "description"  name = "description"></textarea>
+                            </div>
+                        </div>
                     </div>
 
                     <div class = "container">
 
                         <h3 class = "subheading">Address</h3>
-
-                        <input type = "text" placeholder = "Physical Address" class = "form-control" id = "physical_address"  name = "address">
-                        <input type = "text" placeholder = "City" class = "form-control" id = "city"  name = "address">
-                        <label for = "campus" id = "label_campus">Nearby Campus</label>
-                            <select id = "campus_select">
-                                <option value ="campus" id="campus">campus</option>
-                                <option value ="APB" class = "campusoptions">APB</option>
-                                <option value ="APK" class = "campusoptions">APK</option>
-                                <option value ="SWC" class = "campusoptions">SWC</option>
-                                <option value ="DFC" class = "campusoptions">DFC</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type = "text" placeholder = "Physical Address" class = "form-control" id = "physical_address"  name = "phyAddress">
+                                <input type = "text" placeholder = "City" class = "form-control" id = "city"  name = "city">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for = "campus" id = "label_campus">Nearby Campus</label>
+                                    <select id = "campus_select" name="campus">
+                                        <option value ="campus" id="campus">campus</option>
+                                        <option value ="APB" class = "campusoptions">APB</option>
+                                        <option value ="APK" class = "campusoptions">APK</option>
+                                        <option value ="SWC" class = "campusoptions">SWC</option>
+                                        <option value ="DFC" class = "campusoptions">DFC</option>
+                                    </select>
+                            </div>
+                        </div>
 
                     </div>
                     
@@ -77,22 +95,20 @@
                    
                     
                         <label for = "NsfasAccredited" id = "Nasfas_label" >Nsfas Accredited
-                            <input type = "radio"  id = "Nasfas"  name = "Nsfas" onclick="text(1)" >                
+                            <input type = "radio"  id = "Nasfas"  name = "nsfas" value=3500 onclick="text(1)" >                
                         </label>
                         <label for = "NotAccredited" id = "NotAccredited_label">Not Accredited
-                            <input type = "radio"  id = "NotAccredited"  name = "Nsfas" onclick="text(0)" >  
+                            <input type = "radio"  id = "NotAccredited"  name = "nsfas" onclick="text(0)" >  
                         </label>  
                     
-                        <input type = "text" placeholder = "Price(R)" class = "form-control" id = "price"  name = "price">
-                    
+                        <input type = "text" placeholder = "Price(R)" class = "form-control" id = "price"  name = "nsfas">
                     
                   
-                        <label for = "Room_type" id = "label_room">Room Type</label>
-                        <select id = "room_select">
+                        <label for = "Room_type" id = "label_room" >Room Type</label>
+                        <select id = "room_select" name="room">
                             <option value ="Room_type" id="Room_type">Room Type</option>
                             <option value ="Single" class = "roomoptions">Single</option>
-                            <option value ="Sharing(2-4)" class = "roomoptions">Sharing(2-4)</option>
-                            <option value ="Sharing(4-8)" class = "roomoptions">Sharing(4-8)</option>
+                            <option value ="Sharing" class = "roomoptions">Sharing(2-4)</option>
                        
                         </select>
                     </div>
@@ -102,7 +118,8 @@
                         <h5 class = "subheading">Add Images</h5>
 
                         <!--Upload Pictures-->
-                        <input type = "file" class = "upload-box" placeholder="Add file" id = "file"  name = "file">
+                        <input type = "file" class = "upload-box" placeholder="Add file" id = "file"  name = "file[]" multiple>
+                        <input type="submit" name="submit" value="upload">
                     </div>
 
 
