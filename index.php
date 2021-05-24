@@ -23,7 +23,6 @@
 <body id="body">
     <header class="row">
         <!-- Added div to align logo picture and comapny name -->
-<<<<<<< HEAD
       <div class="col-lg-3">
         <img src="pictures\logoNew.jpeg" id="logoImg"> 
         <span id="resName">MyRes</span>
@@ -38,21 +37,6 @@
         <a href=#about_us class="header_links col-lg-3">About us</a>
         <a href="php_files\registration.php" id="Apply" class="col-lg-3">Apply</a>
         <button id="login" class="col-lg-3">Login</button>
-=======
-        <div class="col-lg-3">
-           <img src="pictures\logoNew.jpeg" id="logoImg"> 
-           <span id="resName">MyRes</span>
-       </div>
-       <form action="index.php" method="post">
-        <input type="text" id="searchRes" name='resName' class="col-lg-1">
-        <button type="submit" class="col-lg-1" ><img src="pictures\search2.png" id="searchSymbol"></button>
-       <!-- Added div to all links with 12 grid system -->
-       <div class="row col-lg-6">
-           <a href=#contacts class="header_links col-lg-3">Contacts</a>
-           <a href=#about_us class="header_links col-lg-3">About us</a>
-           <button id="Apply" class="col-lg-3" >Apply</button>
-           <button id="login" class="col-lg-3">Login</button>
->>>>>>> a53062d714da8750c6a09208895f02eff93076e0
        </div>
     </header>
 
