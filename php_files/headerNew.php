@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="..\css_files\header.css">
 
 <header class="row" style="height: 15%;">
@@ -14,3 +15,30 @@
   </div>
 
 </header> 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_files\HomePage.css">
+    <title>HeaderNew</title>
+</head>
+<body>
+<form action="headerNew" method="post">
+
+<div class  = "col-lg-3" >
+<img src="pictures\logoNew.jpeg" alt="logo">
+<span id="resName">MyRes</span>
+</div>
+
+
+
+</div>
+
+</form>
+    
+</body>
+</html>
+>>>>>>> 5e984a54f783f9ac2d1d8eca5ded15e9cf05337e

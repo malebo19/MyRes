@@ -58,8 +58,12 @@ header img{ float: left;}
     margin-left:50%;
 }
 
+<<<<<<< HEAD
 
 #Apply, #login {
+=======
+#Apply, #login{
+>>>>>>> 5e984a54f783f9ac2d1d8eca5ded15e9cf05337e
     background-color: #7ED956;
     border: 10px solid #272a4a;
     height: 50px;
