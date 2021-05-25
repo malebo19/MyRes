@@ -1,0 +1,19 @@
+header{
+    height: 15%;
+    background-color: #272a4a;
+}
+#logoImg{
+    float: left;
+    width: 100px;
+    border-radius: 50%;
+}
+#resname{
+    float: left;
+    margin-top: 2%;
+}
+#email,#logutbutton{
+    margin-top: 2%;
+}
+#logoutbutton{
+    float: right;
+}
