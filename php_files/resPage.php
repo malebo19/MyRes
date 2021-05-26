@@ -27,6 +27,7 @@
 
         $sql = mysqli_query($conn, "SELECT * FROM accomodation WHERE Res_ID = '$mainID'");
         $accomodation = mysqli_fetch_array($sql);
+
         /*Dictionary to translate sharing column in accomodation table*/
         $dict = array('Yes' => 'Sharing', 'No' => 'Single')
     ?>  
@@ -56,17 +57,19 @@
 
         <h3 id="Gallery_heading">Gallery:</h3>
 
+        <!-- Import Pictures Query -->
+        <?php require "../database/update_profile.php" ?>
+
         <!-- Display Accomodation Images -->
-        <!-- Import databes from Filters file for pictures -->
-        <?php $pictures = array('..\pictures\RichmondChill.jpeg', '..\pictures\RichmondEnter.jpeg', '..\pictures\RichmondOutside.jpeg', '..\pictures\RichmondRooms.jpg', '..\pictures\RichmondStudy.jpeg'); ?>
+         <div id="pics">
+            <?php if (empty($pictures)) { ?>
+                <h4 id="no_img">No pictures found!</h4>
+            <?php } ?>
+            <?php for ($i=0; $i < count($pictures)-1; $i++) { ?>
 
-        <div id="res-pictures" class="row"> 
-            <!-- loop through all pictures in database -->
-            <?php foreach ($pictures as $picture) { ?>
-
-                <?php $photo = "<img src='$picture' alt='picture' class='imgs'>" ?>
+                <?php $photo = "" ?>
                 <span class="pictures">
-                    <?php echo $photo; ?>
+                    <img alt='picture' class='imgs' src=<?php echo $pictures[$i] ?> >
                 </span>
             <?php } ?>
         </div>
@@ -112,7 +115,7 @@
             <!-- Enter Rating -->
 
             <div class="col-md-4">
-                <input type="number" class="form-control" name="rate" id="rate" placeholder="Enter Rating" required><br>
+                <input type="number" class="form-control" name="rate" id="rate" placeholder="Enter Rating" min="1" max="5" required><br>
                 <input type="text" class="form-control" style="margin-bottom: 10px; margin-top: 10px" name="email" id="email" placeholder="Email Id" re><br><br>
                 <textarea class="form-control" rows="5" placeholder="Write your review here..." name="remark" id="remark" required></textarea><br>
                 <p><button  class="btn btn-default btn-sm btn-info" id="srr_rating" name="submit">Submit</button></p>

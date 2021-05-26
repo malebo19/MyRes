@@ -46,7 +46,13 @@ $sql = mysqli_query($conn, "SELECT Res_Name, Address, Campus, Price_Accreditatio
 
 $results = mysqli_fetch_assoc($sql);
 
-$profile_pic = (isset($_SESSION["image"]))?"..\pictures\profile_dummy.png":$results['picture_id'];
+$profile_pic = '';
+if (empty($results['picture_id'])){
+	$profile_pic = "..\pictures\profile_dummy.png";
+}
+else{
+	$profile_pic = $results['picture_id'];
+}
 
 
 /* get pictures that already in the database */

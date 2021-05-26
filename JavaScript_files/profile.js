@@ -52,7 +52,7 @@ $(".add_img").change(function(evt) {
 	    	console.log(data);
 	        arrayPic = data.split(',');
 
-	        for (var i = 0; i < arrayPic.length-1; i++) {
+	        for (var i = 0; i < arrayPic.length; i++) {
 	        	arrayPic[i]
 	        	console.log(arrayPic[i]);
 	        	picture = document.createElement('img');

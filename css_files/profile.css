@@ -104,6 +104,16 @@ div label {
     text-align: center;
 }
 
+#delete {
+    width: 100%;
+    height: 45px;
+    background-color: #7ED956;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
 .change {
     background-color: #7ed956;
     border: none;

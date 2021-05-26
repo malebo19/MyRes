@@ -66,7 +66,8 @@
         <input type="text" placeholder="Minimum Price" id="minPrice" name="minPrice" class="price load">
         <input type="text" placeholder="Maximum Price" id="maxPrice" name="maxPrice" class="price load">
         <br>
-        <input type="range" min="100" max="10000" value="5000" id="priceRange" oninput="rangeInput()">
+        <input type="radio" name="nsfas" value="3500" id="nsfas" class=".nsfas load">
+        <label>NSFAS Accredited</label>
 
         <hr>
         <!-- Choosing the prefferd number of rooms -->

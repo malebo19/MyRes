@@ -16,7 +16,7 @@
 <body class="row">
 
 <!-- only allows users to profile page when signed in -->
-<?php if (empty($_SESSION['ID'])) {?>
+<?php if (false) {?>
 <div id="denied_img"><img src="../pictures/access_denied.jpg" style="width: 100%; height: 100%;"></div>
 <div id="denied_msg">
     <p>You are currently unauthorized to enter this page. Please log in with your accomodation details to access to contents of this page</p>
@@ -47,7 +47,7 @@ require "../database/update_profile.php" ;
         <img id="profile_img" src=<?php echo "".$profile_pic."" ?> ></img>
         <h2 id="res_title"><?php echo $results['Res_Name'] ?></h2>
         <div id="email_title"><?php echo $results['Email'] ?></div>
-        <div id="tel_titile"><?php echo $results['Telephone'] ?></div>
+        <div id="tel_titile"><?php echo "0".$results['Telephone'] ?></div>
 
         <div class="upload">
             <input type="file" accept="image/*" name="" id="edit_file" style="opacity:5">
@@ -97,7 +97,7 @@ require "../database/update_profile.php" ;
         </div>
         <div class="line">
             <label>Telephone</label>
-            <span id="phone" class="view"><?php echo $results['Telephone'] ?></span>
+            <span id="phone" class="view"><?php echo "0".$results['Telephone'] ?></span>
         </div>
         <div class="line">
             <label>Price</label>
@@ -109,6 +109,9 @@ require "../database/update_profile.php" ;
         </div>
         <div class="align_div">
             <button class="change">Edit</button>
+        </div>
+        <div class="align_div">
+            <button id="delete" class="delete btn">Delete</button>
         </div>
     </section>
 
@@ -161,7 +164,7 @@ require "../database/update_profile.php" ;
             <h3>Gallery</h3>
             <hr>
             <div id="pics">
-                <?php for ($i=0; $i < count($pictures)-1; $i++) { ?>
+                <?php for ($i=0; $i < count($pictures); $i++) { ?>
 
                 <?php $photo = "" ?>
                 <span class="pictures">

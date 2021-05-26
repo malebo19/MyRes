@@ -1,36 +1,5 @@
 $(document).ready(function(){
 
-//global variable to determine which price is selected
-priceSelector = true;	//true edits min and false edits max 
-
-console.log('javascript this is me');
-
-
-//set range input to edit min price
-$("#minPrice").mousedown(function(){
-	priceSelector = true;
-	console.log("min selected");
-});
-
-//set range input to edit max price
-$("#maxPrice").mousedown(function(){
-	priceSelector = false;
-	console.log("max selected");
-});
-
-//change min and max prices using the range input
-function rangeInput(){
-	min = document.getElementById("minPrice");
-	max = document.getElementById("maxPrice");
-	rangeValue = document.getElementById("priceRange").value;
-
-	if (priceSelector){
-		min.value = rangeValue;
-	}
-	else{
-		max.value = rangeValue;
-	}
-}
 
 /* login button click funtionality */
 $("#login").click(function(){
@@ -50,13 +19,15 @@ function Reses(){
 	campus = $(".campus:checked").val();
 	min_price = $('#minPrice').val();
 	max_price = $('#maxPrice').val();
+	nsfas = $('.nsfas:checked').val();
+	console.log(nsfas);
 	rooms = $(".rooms:checked").val();
 	ratings = $("input[name='ratings']").val();
 	$("#searchResults").empty();
 
 	
 	$.post("./database/Filters.php",
-		{'campus':campus, 'minPrice':min_price, 'maxPrice': max_price, 'rooms':rooms, 'ratings':ratings, 'resName':resName},
+		{'campus':campus, 'minPrice':min_price, 'maxPrice': max_price, 'rooms':rooms, 'ratings':ratings, 'resName':resName, 'nsfas':nsfas},
 		function(data){
 			results = JSON.parse(data);
 			
@@ -119,6 +90,12 @@ console.log(inputs);
 inputs.forEach((element) =>{
 	console.log(element)
 	element.addEventListener('click',function(){Reses()})
+})
+
+$('#nsfas').click(() {
+	if ($('#nasfas').val() == 3500){
+
+	}
 })
 
 })

@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $Res_Name = $_POST['Res_Name'];
 $Address = $_POST['Address'];
