@@ -165,7 +165,7 @@
       <img src="pictures\doodle2.png" id="doodle" alt="student Accomodations" class="col-lg-6">
 
       
-      <div id="about_us" class="col-lg-6">
+        <div id="about_us" class="col-lg-6">
         <h5 class = "aboutHeader">MYRES ABOUT US</h4>
 
         <P> We are a user-friendly platform that connects young people with places of residence during their study years. </P> <br>
@@ -180,8 +180,44 @@
           tenants, landlords and partnered academic institutions
           who share our vision of creating a platform that connects people 
           in a safe and secure environment throughout South Africa</p>
-      </div>
+       </div>
         </div>
+
+        <div id="about_team" class="col-lg-6">
+        <h5 class = "aboutTeam">MYRES ABOUT THE TEAM </h4>
+
+        <P> The creators of the website MyRes are Angelic SURNAME, Malebo Moleleki, Surprise Ngobeni,
+        Khathutshedzo Luvhimbi, Mitchell SURNAME and Lethabo Makopo. We are second year students in the
+        course Business Information Technology at the prestigious University of Johannesburg.</P> <br>
+        <p> Angelic, Malebo, Surprise, Kathu, Shellie and Lethabo have taken into account the issues faced by the
+        students who take the long journeys to their designated institutions, making way towards finding
+        accommodation for their academic year. This is the reason for the creation of this website. This website
+        is to help students not only find student residence accommodation around their campuses, but also it is
+        to lower the chances of this students being danger. Considering how most students come from
+        different, far way hometowns and not being familiar with the city around their campuses.</p> <br>
+        <p> Angelic came up with the colour scheme of the website, being lime green, blue and greys. She also
+        designed the logo and collaborated with Surprise on the home page. She has also designed the footer
+        and the header with Surprise. They designed and coded the homepage, which include sliders, filters for
+        the different residences. </p> <br>
+        <p> Malebo and Lethabo collaborated on the design skeleton of the residences page. This is the page that
+        consists of the residence’s pictures, descriptions, viewers rating, viewers reviews and the map address
+        for the residences. Malebo created the database that has all the different tables to all the information
+        that is to appear in the residences page. Lethabo wrote the documentation of the website, as the
+        technical documentation writer.
+        Khathu and Mitchell collaborated on the registration form. This is the page where the Residence
+        accommodation owners/managers can register to have their residence to have them appear on this
+        website. Mitchell has created the profile pop up form for the residences.</p>
+        
+        </div>
+
+        <div class ="row">
+      <img src="pictures\doodle2.png" id="doodle" alt="student Accomodations" class="col-lg-6">
+        </div>
+
+
+
+
+
 
         <a href= #resName class="back_up">Scroll Up</a>
     

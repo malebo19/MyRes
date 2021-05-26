@@ -287,11 +287,15 @@ footer{
     margin-left: 50%;
     color:black;
 }
+.aboutTeam{
+    margin-right: 50%;
+    color: black;
+}
 #about_us{
-    text-align: left;
-    
-    
-    
+    text-align: left;   
+}
+#about_team{
+    text-align: right;
 }
 .bullets{
     display: none;
