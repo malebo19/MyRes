@@ -300,5 +300,8 @@ footer{
 .bullets{
     display: none;
 }
-
+#group{
+    height: 40%;
+    
+}
 
