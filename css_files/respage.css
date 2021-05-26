@@ -1,0 +1,188 @@
+body {
+    font-family: sans-serif;
+    width: auto;
+    background-color: #E1DAD8;
+}
+
+/*Main section*/
+main {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    max-width: 100%;
+}
+
+#res-description {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    float: left;
+    height: auto;
+    min-width: 40%;
+    
+}
+
+/*Res pictures properties*/
+#res-pictures {
+    float: left;
+    width: 100%;
+    clear: right;
+    display: block;
+}
+
+/* street view map styling*/
+#map {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+#Gallery_heading {
+  margin-top: 33%;
+  clear: both;
+  background-color: grey;
+  padding: 5px;
+}
+
+.imgs {
+  transition: .5s;
+  width: 20%;
+  height: 200px
+}
+ 
+
+.imgs:hover {
+  transform: scale(1.5);
+  margin-left: 5%;
+  transition: 1s;
+}
+
+
+
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7ed956;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1c467d;
+    opacity: 0.6;
+}
+
+#reviews-container {
+    
+    max-width: 50%;
+    float: left;
+    clear: left;
+    margin: 50px 0px 10px 0px; 
+    padding: 0px 10px 0px 10px;
+}
+
+
+/*Review form properties */
+.form {
+    display: none;
+}
+
+.show {
+    background-color: #FFFFFF;
+    display: block;
+   
+}
+
+#reviewForm {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+/*Rating stars*/
+form.stars {
+    width: 270px;
+    display: inline-block;
+  }
+  
+input.star { display: none; }
+  
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+  }
+  
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+  
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+  }
+  
+  input.star-1:checked ~ label.star:before { color: #F62; }
+  
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+  
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+
+input,textarea {
+    background-color: #E1DAD8;
+    border-radius: 5px;
+}
+
+#revDes {
+    width: 320px;
+    height: 100px;
+}
+
+
+
+/*Map container properties*/
+#mapContainer {
+    background-color: #FFFFFF;
+    width: 650px;
+    height: 400px;
+    max-width: 50%;
+    float: left;
+    clear: right;
+    margin: 10px 0px 10px 5px; 
+    padding: 0px 10px 0px 10px;
+        
+}
+
+
+/* Map enlarge div */
+.enlarge {
+    transform: scale(1.5);
+}
+
+
+
+/* The Close Button */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  #close:hover,
+  #close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+

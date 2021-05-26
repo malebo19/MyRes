@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #E1DAD8;
+    padding: 10px;
+}
+
+#denied_img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+#denied_msg {
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 1%;
+    left: 25%;
+    background-color: grey;
+    padding: 2%;
+
+}
+
+#return_home {
+  text-decoration: none;
+  background-color: #0ea7a6;
+  padding: 7px;
+  color: black;
+  border-radius: 5px;
+}
+
+#signIn {
+    text-decoration: none;
+  background-color: #48ad2f;
+  padding: 7px;
+  color: black;
+  border-radius: 5px;
+  position:relative;
+  left: 70%;
+}
+
+#profile_summary {
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+    border: 5px solid #E1DAD8;
+}
+
+#profile_img {
+    width: 50%;
+    height: 10em;
+    border-radius: 50%
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #7ED956;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#reviews {
+    background-color: grey;
+    padding: 10px;
+    border: 5px solid #E1DAD8;
+}
+
+#detailed_profile {
+
+    background-color: grey;
+    padding: 20px;
+    border-bottom: 5px solid #E1DAD8;
+}
+
+#edit_form {
+    background-color: grey;
+    padding: 20px;
+    border-bottom: 5px solid #E1DAD8;
+}
+
+.edit {
+    width: 50%;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+div label {
+    min-width: 15%;
+    width: 30%;
+}
+
+.align_div {
+    text-align: center;
+}
+
+.change {
+    background-color: #7ed956;
+    border: none;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    width: 20%;
+    border-radius: 10px
+}
+
+#pictures {
+    background-color: grey;
+    padding: 10px;
+    border-left: 10px solid #E1DAD8;
+    border-top: 5px solid #E1DAD8;
+    height: fit-content;
+}
+
+#pics {
+    margin-bottom: 20px;
+}
+
+.imgs {
+  transition: .5s;
+  width: 45%;
+  border-radius: 5px;
+  height: 100px;
+  margin: 5px;
+}
+ 
+
+#description {
+    background-color: grey;
+    padding: 10px;
+    border: 10px solid #E1DAD8;
+    border-top: 5px solid #E1DAD8;
+}
+
+#res_description {
+    min-height: 100px;{}
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.upload{
+    /*display: flex;*/
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+}
+.upload input[type="file"]{
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    opacity: 0;
+    top: -40px;
+}
+
