@@ -163,12 +163,12 @@
       <hr>
         <div class ="row">
       <img src="pictures\doodle2.png" id="doodle" alt="student Accomodations" class="col-lg-6">
-
+        <br>
       
-        <div id="about_us" class="col-lg-6">
-        <h5 class = "aboutHeader">MYRES ABOUT US</h4>
+        <div id="about_us" class="col-lg-6" >
+        <h5 class = "aboutHeader">MYRES ABOUT US</h5>
 
-        <P> We are a user-friendly platform that connects young people with places of residence during their study years. </P> <br>
+        <P > We are a user-friendly platform that connects young people with places of residence during their study years. </P> <br>
         <p> We know that finding and renting out a place to stay can be a tedious experience so we have created a community where landlords 
           list their properties on our platform , and young people visit our website to send an enquiry directly to the landlord  so that 
           they can get to know each other before signing any documents.</p> <br>
@@ -179,12 +179,14 @@
           We’re building a community of students, 
           tenants, landlords and partnered academic institutions
           who share our vision of creating a platform that connects people 
-          in a safe and secure environment throughout South Africa</p>
-       </div>
+          in a safe and secure environment throughout South Africa</p> 
+       
         </div>
 
-        <div id="about_team" class="col-lg-6">
-        <h5 class = "aboutTeam">MYRES ABOUT THE TEAM </h4>
+        <br>
+
+        <div id="about_team" class="col-lg-6" >
+        <h5 class = "aboutTeam">MYRES ABOUT THE TEAM </h5>
 
         <P> The creators of the website MyRes are Angelic SURNAME, Malebo Moleleki, Surprise Ngobeni,
         Khathutshedzo Luvhimbi, Mitchell SURNAME and Lethabo Makopo. We are second year students in the
@@ -210,14 +212,10 @@
         
         </div>
 
-        <div class ="row">
-      <img src="pictures\doodle2.png" id="doodle" alt="student Accomodations" class="col-lg-6">
+        <div class ="col-lg-6">
+        <img src="pictures\GrouPicture.jpeg" id="group" alt="thegroup" >
         </div>
-
-
-
-
-
+        </div>
 
         <a href= #resName class="back_up">Scroll Up</a>
     
@@ -225,17 +223,17 @@
  <link rel="stylesheet" type="text/css" href="..\css_files\footer.css">
  <footer id = "contacts">
     <div class="grouped_items"><div id = "contacts">
-       <a href=""><input type="image" src="Icons\email.png" class="social_icons" /></a>
-       <a href=""><input type="image" src="Icons\telephone.png" class="social_icons" /></a>
+       <a href="mailto:someone@mail.com?Subject=Test%20Mail"><input type="image" src="Icons\email.png" class="social_icons" /></a>
+       <a href="tel:0637354497"><input type="image" src="Icons\telephone.png" class="social_icons" /></a>
        <a href="https://www.instagram.com/kingswayplaceofficial/"><input type="image" src="Icons\insta.png" class="social_icons" /></a>
        <a href="https://twitter.com/staysouthpoint?s=08"><input type="image" src="Icons\twitter.png" class="social_icons" /></a>
        <a href="https://www.youtube.com/watch?v=0Skd6opSpTg&ab_channel=SouthPointClic"><input type="image" src="Icons\YouTube.png" class="social_icons" /></a>
     </div> </div>
     <br>
     <div class="grouped_items">
-       <a href="html_files\policies.html">Privacy Policy | </a>
-       <a href="html_files\policies.html">Cookie Policy | </a>
-       <a href="html_files\policies.html">Terms & Conditions</a>
+       <a href="">Privacy Policy | </a>
+       <a href="">Cookie Policy | </a>
+       <a href="">Terms & Conditions</a>
     </div>
        <br>
        <p class="grouped_items" style="color: white">&copy; 2021 MyRes. All Rights Reserved </p>
