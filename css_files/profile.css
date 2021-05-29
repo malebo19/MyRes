@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #E1DAD8;
+    margin-left: 0px;
+    padding-left: 20px;
+    font-family: Poppins;
+}
+
+
+/*Header*/
+nav {
+  background-color: #27284a;
+  position: relative;
+  box-shadow: 5px 0px 7px black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+#title{
+  text-align: center;
+  position: relative;
+}
+
+#nav_title {
+  font-size: 24px;
+  margin-top: 25px;
+  position: relative;
+  font-family: lobster;
+  right: 5%;
+  color: white;
+
+}
+
+#nav_btns {
+  justify-content: end;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+
+.nav_btn {
+  text-decoration: none;
+  margin: 15px;
+  color: white;
+}
+
+.nav_btn:hover {
+  transform: scale(1.5);
+  text-shadow: 0px 0px 5px white;
+}
+
+#nav_home {
+  text-decoration: none;
+  color: white;
+  background-color: #7ed956;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+}
+
+#nav_home:hover{
+  background-color: #55ea55;
+  box-shadow: 1px 2px 5px #07b907;
+  
+}
+
+#res_title{
+  color: #7ed956;
+  font-weight:bold;
+  margin:6px;
+}
+
+h3 {
+  color: #7ed956;
+  margin: 6px;
+}
+
+.row p {
+  margin-left:80px;
+}
+
+
+#denied_img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+#denied_msg {
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 1%;
+    left: 25%;
+    background-color: grey;
+    padding: 2%;
+
+}
+
+#return_home {
+  text-decoration: none;
+  background-color: #0ea7a6;
+  padding: 7px;
+  color: black;
+  border-radius: 5px;
+}
+
+#signIn {
+    text-decoration: none;
+  background-color: #48ad2f;
+  padding: 7px;
+  color: black;
+  border-radius: 5px;
+  position:relative;
+  left: 70%;
+}
+
+#profile_summary {
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #00000063;
+}
+
+#profile_img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #7ED956;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+btn:hover{
+  
+}
+
+#reviews {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #00000063;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 15px;
+  font-weight:none;
+  margin-left:6px
+}
+
+#detailed_profile {
+    background-color: #ffffff;
+    padding: 20px;
+    width:880px;
+    box-shadow: 1px 1px 2px #00000063;
+}
+
+#edit_form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 5px solid #E1DAD8;
+}
+
+.edit {
+    width: 50%;
+}
+
+.line {
+    width: 100%;
+    margin-top: 20px;
+}
+
+div label {
+    min-width: 15%;
+    width: 30%;
+    margin-left: 10px;
+    font-weight:bolder;
+}
+
+.align_div {
+    position: relative;
+}
+
+#delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20%;
+    height: 35px;
+    background-color: #e64848;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#delete:hover{
+  background-color: red;
+  transitions: 4s;
+  transform: scale(1.1);
+}
+
+#pic_des {
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+#pictures {
+  background-color: #ffffff;
+  width: 440px;
+  border-right: 10px solid #e1dad8;
+}
+
+.pictures{
+  width: 40%;
+  padding: 3px;
+  margin: 10px;
+  position: relative;
+}
+
+.trash {
+  background-color: #ef3c3c;
+  float: right;
+  border: 2px solid black;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border: none;
+  border-radius: 90px;
+}
+
+.trash:hover{
+  transitions: 2s;
+  background-color: red;
+  transform: scale(1.1);
+}
+
+.imgs{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.change {
+    background-color: #7ed956;
+    border: none;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    width: 20%;
+    border-radius: 10px
+}
+
+
+#pics {
+    margin-bottom: 20px;
+}
+
+
+
+#description {
+    background-color: #ffffff;
+    height: 400px;
+    padding: 10px;
+    width: 440px;
+    box-shadow: 1px 1px 2px #00000063;
+}
+
+#res_description {
+    min-height: 200px;
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.upload{
+    /*display: flex;*/
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.upload input[type="file"]{
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    opacity: 0;
+    top: -40px;
+}
+

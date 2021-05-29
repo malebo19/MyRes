@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    
+	margin: 0;
+    
+}
+
+/* Confirmation & Registration_connection Background image*/
+
+#Blurredimg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+/*Display of captured Information from forms*/
+
+body  .forms{
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	
+
+	font-family: monospace;
+	
+	
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+	width: 40%;
+	height: 10%;
+	
+}
+
+
+/*Border around message*/
+
+#Divborder {
+    width: 50%;
+	height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 1%;
+    left: 25%;
+    background-color: rgb(0, 0, 0);
+	opacity: 0.7;
+    padding: 2%;
+	border: medium solid rgb(72, 255, 0);
+	border-radius: 5px;
+
+}
+
+/*Bottom white line*/
+
+.whiteline{
+
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+
+
+/*Confrim button link*/
+
+
+body #Confirm {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #48ad2f;
+	border: medium double rgb(3, 35, 218);
+	padding: 7px;
+	border-radius: 5px;
+	
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+
+}
+
+/*Re_enter button link*/
+
+
+#Re_enter {
+	font-family: sans-serif;
+	text-decoration: none;
+	background-color: #ee2828;
+	font-size: 20px;
+	border: medium double rgb(3, 35, 218);
+	padding: 7px;
+	color: black;
+	border-radius: 5px;	
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 50%;
+    right: 30%;
+}
+
+
+
+/*Congratulations message when connected to database*/
+
+
+body .Congrats{
+	color: rgb(255, 255, 255);
+
+	font-family: monospace;
+	font-size: 20px;
+	
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+	width: 40%;
+	height: 10%;
+	
+}
+
+/*Failure message when not connected to database*/
+
+body .Failure{
+	color: rgb(255, 255, 255);
+
+	font-family: monospace;
+	font-size: 20px;
+	
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+	width: 40%;
+	height: 10%;
+	
+}
+
+
+/*return Home buttton*/
+
+#return_home {
+	font-family: sans-serif;
+	text-decoration: none;
+	background-color: #0ea7a6;
+	padding: 7px;
+	color: black;
+	border-radius: 5px;
+	margin: auto;
+    margin-top: 10%;
+    position: fixed;
+    top: 50%;
+    
+  }

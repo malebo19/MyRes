@@ -1,0 +1,36 @@
+header {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #1c467D;
+    margin: 2%;
+}
+
+#logoImg {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#resName {
+    font-size: 18pt;
+    color: white;
+}
+
+.header_links {
+    border: 10px solid #1c467D;
+    background-color: #5bccf6;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    height: 50px;
+    padding-top: 3px;
+}
+
+#loginButton {
+    background-color: #7ED956;
+    border-radius: 10px;
+    border: 10px solid #1c467D;
+    height: 50px;
+    border-radius: 20px;
+    
+}

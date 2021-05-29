@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+#body {
+    background-color: #e1dad8;
+    font-family: 'Poppins';
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #272a4a;  
+    position: sticky;
+}
+
+#form {
+    position: relative;
+}
+
+
+#logoImg {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#resName {
+    font-size: 46px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+#searchRes {
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.header_links{
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    height: 50px;
+    padding-top: 3px;
+    margin-top: px;
+}
+.back_up{
+    text-decoration: none;
+    text-align: center;
+    margin-left:50%;
+}
+
+#login {
+    background-color: #7ED956;
+    border: 10px solid #272a4a;
+    height: 50px;
+    border-radius: 20px;
+    color:#ffffff;
+    text-decoration: none;
+    
+}
+
+#login:hover {
+  background-color: green;
+}
+
+#submitFilters {
+    background-color: #7ED956;
+    border-radius: 10px;
+    border:none;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Container to display all reses */
+#searchResults {
+    max-width: 100%;
+    min-height: 200px;
+    margin-top: 9px;
+    background-color: #e1dad8;
+}
+
+/* Boxes that display each res*/
+.res_container {
+    justify-content: center;
+    height: fit-content;
+    width:300px;
+    margin: 0px;
+    padding: 10px;
+    border:2px solid #00000063;
+    background-color: #ffffff;
+    float: left;
+    box-shadow: 1px 1px 3px;
+}
+
+/*Picture displayed per res*/
+.displayPic {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+/*Res title for all reses*/
+.res_title {
+  font-size: 2em;
+  color: #7ed956;
+  text-align:center;
+  height: 100px;
+  overflow: hidden;
+}
+
+/*Res properties display*/
+.res_info {
+  text-align: center;
+  margin: 5px;
+  border-bottom: 1px solid grey;
+}
+
+input[name='ratings'] {
+    color: gold;
+}
+
+/* Button to view accomodation */
+.view_acc {
+  text-decoration: none;
+  background-color: #7ED956;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Positioning the filter box*/
+#filters {
+    min-width: 5%;
+    background-color: #27284a;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    box-shadow: 1px 1px 3px #00000063;
+}
+
+#filter-res-sec {
+  background-color:#e1dad8;
+  padding-bottom: 50px;
+}
+
+#slider-sec, #slider-sect{
+  background-color:#ffffff;
+  
+}
+
+/*filter heading*/
+h3 {
+    text-align: center;
+    color: #7ed956;
+    padding: 10px;
+    font-weight:bold;
+}
+
+#filters {
+    color:#ffffff;
+}
+
+/*Sub headings inn the filter box*/
+h4 {
+    color: #7ed956;
+    font-family: 'Poppins';
+}
+
+/* about us headings */
+
+.aboutHeader, .aboutTeam {
+    color: #7ED956;
+}
+
+p{
+    margin:10px;
+}
+
+#about-sec {
+  padding: 25px;
+}
+
+/*min and max input boxes*/
+.price {
+    width: 120px;
+}
+
+#priceRange {
+    width: 250px;
+}
+
+/*aligning the sliding image, will remove with javascript*/
+#slideMage {
+    width: 25%;
+    height: 25%;
+    justify-content: center;
+    height: 200px;
+    margin: 10px;
+    background-color: #307297;
+    float: left;
+}
+
+
+/*arrows surrounding the the sliding image*/
+.arrow {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    size: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 5%;
+}
+
+/*Container for the sliding image*/
+.ReSlideShow {
+    max-width: 60%;
+    margin: auto;
+    position: relative;
+    background-color:  #ffffff;
+}
+
+.Res img {
+    width: 100%;
+    height: 400px;
+    background-color:  #E1DAD8;
+}
+
+.caption{
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.bullet{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-left: 24%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .bullet:hover {
+    background-color: #717171;
+  }
+
+.fades {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+.about-row, #about-sec {
+ background-color:#e1dad8;
+}
+
+
+footer{
+    float: left;
+    background-color: #272a4a;
+    margin-top: 5px;
+    clear: both;
+    width:100%;
+    padding-top: 15px;
+   
+}
+
+/* aligning icons and links in the footer*/
+.grouped_items {
+    text-align: center;
+}
+
+.grouped_items a{
+    color: white;
+}
+
+.social_icons {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.aboutHeader{
+    margin-left: 50%;
+    color:#7ED956;
+}
+#about_us{
+    text-align: left;
+    height: fit-content; 
+}
+
+#about_team {
+  height:fit-content;
+}
+
+#us_img {
+  height: 500px;
+}
+
+.bullets{
+    display: none;
+}
+
+
+.load {
+    color:#ffffff;
+}
